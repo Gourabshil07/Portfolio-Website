@@ -33,5 +33,5 @@ This project showcases my skills, projects, education, and contact information i
 
 ---
 
-## 📂 Project Structure
+
 
