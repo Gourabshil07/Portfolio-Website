@@ -1,10 +1,8 @@
-// src/Components/Projects/Projects.jsx
 import ProjectCard from "./ProjectCard";
-
-import img11 from "../../assets/11.jpg";
-import img6 from "../../assets/6.jpg";
-import img7 from "../../assets/7.jpg";
-import img13 from "../../assets/13.webp";
+import img11 from "../../assets/weather_forecast.jpg";
+import img6 from "../../assets/Resume_Analyzer.jpg";
+import img7 from "../../assets/Plant_Disease.jpg";
+import img13 from "../../assets/Text_Summarization.webp";
 
 const projects = [
   {

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AboutImg from "../../assets/3.png";
+import AboutImg from "../../assets/about.png";
 import { IoArrowForward } from "react-icons/io5";
 
 const About = () => {
@@ -37,7 +37,7 @@ const About = () => {
 
           <ul>
             <div className="flex gap-3 py-4">
-              {/* ✅ FIXED ARROW */}
+  
               <IoArrowForward className="text-2xl md:text-3xl mt-2 shrink-0 min-w-[28px]" />
 
               <span className="max-w-md">
@@ -53,7 +53,7 @@ const About = () => {
             </div>
 
             <div className="flex gap-3 py-4">
-              {/* ✅ FIXED ARROW */}
+  
               <IoArrowForward className="text-2xl md:text-3xl mt-2 shrink-0 min-w-[28px]" />
 
               <span className="max-w-md">
@@ -71,7 +71,7 @@ const About = () => {
             </div>
 
             <div className="flex gap-3 py-4">
-              {/* ✅ FIXED ARROW */}
+              
               <IoArrowForward className="text-2xl md:text-3xl mt-2 shrink-0 min-w-[28px]" />
 
               <span className="max-w-md">

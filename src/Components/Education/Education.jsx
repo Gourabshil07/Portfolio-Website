@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import EduImg from "../../assets/4.jpg";
+import EduImg from "../../assets/education_cartoon.jpg";
 
 const Education = () => {
   return (
@@ -14,7 +14,6 @@ const Education = () => {
           Education
         </h2>
         
-
         {/* Layout */}
         <div className="grid md:grid-cols-2 gap-10 items-start">
           
@@ -36,10 +35,8 @@ const Education = () => {
             />
           </div>
 
-          {/* Timeline */}
           <div className="relative">
 
-            {/* Vertical straight line */}
             <span className="absolute left-5 top-1 bottom-0 w-[3px] bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></span>
 
             <div className="flex flex-col gap-6 pl-12">

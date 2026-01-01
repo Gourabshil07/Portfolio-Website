@@ -1,5 +1,5 @@
 import React from "react";
-import avatarImg from "../../assets/test2.png";
+import avatarImg from "../../assets/home_cartoon.png";
 import TextChange from "../TextChange";
 
 const Home = () => {
