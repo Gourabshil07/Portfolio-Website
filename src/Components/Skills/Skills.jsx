@@ -27,7 +27,6 @@ const Skills = () => {
         applying them to real-world projects. I focus on writing scalable, maintainable code and creating responsive, user-friendly applications.
       </p>
 
-
       {/* LOGOS */}
       
     <div className="flex flex-wrap justify-center gap-6 gap-y-11 ">

@@ -1,33 +1,42 @@
 import ProjectCard from "./ProjectCard";
-import img11 from "../../assets/weather_forecast.jpg";
-import img6 from "../../assets/Resume_Analyzer.jpg";
-import img7 from "../../assets/Plant_Disease.jpg";
-import img13 from "../../assets/Text_Summarization.webp";
+import { Link } from "react-router-dom";
+
+import LeafNova from "../../assets/LeafNova-AI.png";
+import minidrive from "../../assets/minidrive.png";
+
+import snake_game_img from "../../assets/snake_food.png";
+import password_guessing_img from "../../assets/guessing.png";
 
 const projects = [
   {
-    title: "Weather Forecast",
-    desc: "Real-time weather forecasting app using APIs",
-    img: img11,
-    tech: ["HTML", "CSS", "API", "JavaScript",],
+    title: "LeafNova-AI",
+    desc: "Smart plant care and disease detection system.",
+    img: LeafNova,
+    tech: ["Flask", "Tensorflow", "Gemini", "Groq"],
+    link: "https://leafnova-ai.onrender.com/",
+    
+  },
+
+  {
+    title: "Minidrive Personal Cloud Storage",
+    desc: "Secure cloud storage platform for uploading, managing, sharing, and organizing files.",
+    img: minidrive,
+    tech: ["Flask", "Supabase", "SQLite", "JavaScript"],
+    link: "https://minidrive-zniy.onrender.com/login",
   },
   {
-    title: "Resume Analyzer",
-    desc: "AI-powered resume analyzer that scans resumes and provides job eligibility insights",
-    img: img6,
-    tech: ["Python","Machine Learning", "NLP"],
+    title: "Password Guessing",
+    desc: "Password guessing game with hint-based gameplay.",
+    img: password_guessing_img,
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://password-guessing-gourab.netlify.app/"
   },
   {
-    title: "Smart Plant Disease Detection",
-    desc: "ML-based system to detect plant diseases and suggest causes & cures",
-    img: img7,
-    tech: ["Python", "Machine Learning",],
-  },
-  {
-    title: "Text Summarizer",
-    desc: "Text summarization tool that converts long content into short summaries",
-    img: img13,
-    tech: ["Python", "NLP"],
+  title: "Snake Game",
+  desc: "Desktop-based snake game with a scoreboard and highest score tracking.",
+  img: snake_game_img,
+  tech: ["HTML", "CSS","JavaScript"],
+  link: "https://snake-game-gourab.netlify.app/",
   },
 ];
 
@@ -35,20 +44,9 @@ const Projects = () => {
   return (
     <div
       id="Projects"
-      className="
-        bg-[#f8f9fb]
-        shadow-2xl
-        shadow-black/80
-        mx-0
-        md:mx-20
-        rounded-2xl
-        p-12
-        mt-10
-        px-12 
-        py-5
-      "
+      className="bg-[#f8f9fb] shadow-2xl shadow-black/80 mx-0 md:mx-20 rounded-2xl px-12 pt-6 pb-2 mt-10"
     >
-      <h1 className="text-3xl md:text-4xl font-black md:font-bold mb-8">
+      <h1 className="text-3xl md:text-4xl font-black md:font-bold mb-6 text-left">
         Projects
       </h1>
 
@@ -56,6 +54,16 @@ const Projects = () => {
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
+      </div>
+
+      {/* ✅ SEE MORE BUTTON */}
+      <div className="flex justify-center md:justify-end mt-2">
+        <Link
+          to="/all-projects"
+          className="px-6 py-2 rounded-full bg-[#465697] text-white font-medium hover:scale-105 transition"
+        >
+          See More →
+        </Link>
       </div>
     </div>
   );

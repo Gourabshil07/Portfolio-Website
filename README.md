@@ -1,13 +1,13 @@
 # 🌐 Portfolio Website
 
-A modern, responsive personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**.  
+A modern, responsive personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**.
 This project showcases my skills, projects, education, and contact information in a clean and professional layout.
 
 ---
 
 ## 🚀 Live Preview
-👉 https://gourabshil-portfolio.netlify.app/
 
+👉 https://gourabshil-portfolio.netlify.app/
 
 ---
 
@@ -32,6 +32,3 @@ This project showcases my skills, projects, education, and contact information i
 - Fast performance with Vite
 
 ---
-
-
-

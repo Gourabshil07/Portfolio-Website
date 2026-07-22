@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <footer className="w-full">
-      {/* ===== MAIN BLUE FOOTER ===== */}
+      {/* MAIN BLUE FOOTER*/}
       <div
         className="
           w-full
@@ -26,7 +26,6 @@ const Footer = () => {
         <h2 className="text-2xl md:text-3xl font-extrabold md:font-bold">
           Let’s Work Together
         </h2>
-
 
        <p className="text-sm md:text-base font-semibold md:font-medium opacity-90 mb-6">
         Open to internships & entry-level roles
@@ -49,7 +48,7 @@ const Footer = () => {
           Contact Me
         </a>
 
-        {/* ===== Social Icons ===== */}
+        {/* Social Icons */}
         <div className="flex gap-6 mt-4 items-center">
           {/* CV Download */}
           <a
@@ -93,7 +92,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* ===== BOTTOM COPYRIGHT STRIP ===== */}
+      {/*BOTTOM COPYRIGHT STRIP*/}
       <div className="w-full bg-white/60 text-center py-2">
         <p className="text-xs md:text-sm text-gray-800">
           © {new Date().getFullYear()} Gourab Shil | All Rights Reserved

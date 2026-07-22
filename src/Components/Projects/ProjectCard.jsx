@@ -8,55 +8,64 @@ const techColors = {
   "Machine Learning": "bg-green-600 text-white",
 };
 
-export default function ProjectCard({ title, desc, img, tech = [] }) {
+export default function ProjectCard({ title, desc, img, tech = [], link }) {
   return (
-    <div
-      className="
-        bg-[#0e0e0e]
-        rounded-2xl
-        overflow-hidden
-        flex
-        flex-col
-        h-full
-        transition-all
-        duration-300
-        hover:-translate-y-2
-        hover:shadow-xl
-        -mt-3
-      "
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
     >
-      {/*Image */}
-      <div className="w-full aspect-[4/3] overflow-hidden">
-        <img
-          src={img}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
-      </div>
+      <div
+        className="
+          bg-[#0e0e0e]
+          rounded-2xl
+          overflow-hidden
+          flex
+          flex-col
+          h-full
+          transition-all
+          duration-300
+          hover:-translate-y-2
+          hover:shadow-xl
+          cursor-pointer
+        
+          
+        "
+      >
+        {/* Image */}
+        <div className="w-full aspect-[4/3] overflow-hidden">
+          <img
+            src={img}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-      {/* Content */}
-      <div className="p-5 flex flex-col flex-grow">
-        <h3 className="text-lg font-semibold text-white mb-2">
-          {title}
-        </h3>
+        {/* Content */}
+        <div className="p-5 flex flex-col flex-grow">
+          <h3 className="text-lg font-semibold text-white mb-1">
+            {title}
+          </h3>
 
-        <p className="text-gray-400 text-sm font-medium leading-relaxed mb-4">
-          {desc}
-        </p>
+          <p className="text-gray-400 text-sm font-medium leading-relaxed mb-3">
+            {desc}
+          </p>
 
-        {/*TECH TAGS */}
-        <div className="flex flex-wrap gap-2 mt-auto">
-          {tech.map((item, index) => (
-            <span
-              key={index}
-              className={`px-3 py-1 text-xs rounded-full font-medium
-                ${techColors[item] || "bg-gray-600 text-white"}`}
-            >
-              {item}
-            </span>
-          ))}
+          {/* TECH TAGS */}
+          <div className="flex flex-wrap gap-2 mt-auto">
+            {tech.map((item, index) => (
+              <span
+                key={index}
+                className={`px-3 py-1 text-xs rounded-full font-medium
+                  ${techColors[item] || "bg-gray-600 text-white"}`}
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
